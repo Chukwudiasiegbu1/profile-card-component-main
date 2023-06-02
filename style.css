@@ -1,0 +1,117 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+     --Font-size: (name and stats): 18px;
+     --font-family: 'Kumbh Sans', sans-serif;
+     --weight: 400;
+     --weights:700;
+}
+body{
+    background: var(--Dark-cyan);
+  
+}
+.background_img{
+    width: 23em;
+    background-color: transparent;
+    height: 50em;
+  }
+.top{
+   position: fixed;
+    width: 34.2em;
+    top: -15em;
+    left: -22em;
+
+}
+
+.bottom{
+  position: fixed;
+  width: 35em; 
+  bottom: -15em;
+  right: -22em;
+}
+main{
+    z-index: 1000;
+    width: 21em;
+    background-color: white;
+    height: 23em;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 1em;
+    text-align: center;
+    font-family: var(--font-family);
+    
+}
+.card_img{
+    width: 21em;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+.profile{
+  position: absolute;
+  top: 5em;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+h1{
+  margin-top: 4em;
+  font-weight: var(--weights);
+  font-size:var(--Font-size);
+  margin-bottom: 0.5em;
+  color: var(--Very-dark-desaturated-blue);
+}
+.age{
+  font-size:large;
+}
+span{
+  font-weight: var(--weight);
+  font-size:small;
+  color: var(--Dark-grayish-blue);
+}
+.followers{
+  display: flex;
+  height: 5em;
+  padding-top: 1.5em;
+  background-color: transparent;
+  justify-content: space-around;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-size: var(--Font-size);
+  color: var(--Very-dark-desaturated-blue);
+  border-top: 1px solid rgb(237, 235, 235);
+ 
+}
+.bold{
+  font-weight: var(--weights);
+}
+.letter_spacing{
+  letter-spacing: 0.2em;
+  font-size: 0.5em;
+}
+@media(min-width: 1440px) {
+.top{
+   position: fixed;
+    width: 40em;
+    top: -10em;
+    left: 1em;
+
+}
+
+.bottom{
+  position: fixed;
+  width: 35em; 
+  bottom: -15em;
+  right: 6em;
+}
+}
